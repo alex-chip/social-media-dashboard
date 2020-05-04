@@ -1,0 +1,217 @@
+/* line 1, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/basic/_init.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 5, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/basic/_init.scss */
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* line 10, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/basic/_init.scss */
+body {
+  background-color: white;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  color: #63687e;
+  font-weight: 400;
+}
+
+/* line 18, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/basic/_init.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 22, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/basic/_init.scss */
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* line 29, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/basic/_init.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 33, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/basic/_init.scss */
+.container {
+  padding: 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* line 1, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_header.scss */
+.Header {
+  border-bottom: 1px solid #63687e;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 1, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_header.scss */
+  .Header {
+    border-bottom: none;
+  }
+}
+
+/* line 10, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_header.scss */
+.Header__title {
+  color: #1e202a;
+  margin: 0 0 .3em 0;
+}
+
+/* line 15, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_header.scss */
+.Header__description {
+  margin: 0;
+  font-weight: 700;
+}
+
+/* line 1, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_followers.scss */
+.Followers {
+  margin-bottom: 4em;
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 1, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_followers.scss */
+  .Followers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+  }
+}
+
+/* line 10, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_followers.scss */
+.Followers__card--item {
+  background-color: #f0f2fa;
+  text-align: center;
+  padding: 1em;
+  border-radius: 0.25em;
+  margin-bottom: 2em;
+}
+
+/* line 19, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_followers.scss */
+.Followers__icon--image {
+  margin-right: .5em;
+}
+
+/* line 23, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_followers.scss */
+.Followers__icon--user {
+  font-weight: 700;
+}
+
+/* line 29, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_followers.scss */
+.Followers__dates--number {
+  display: block;
+  font-weight: 700;
+  font-size: 60px;
+  color: #1e202a;
+}
+
+/* line 36, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_followers.scss */
+.Followers__dates--description {
+  text-transform: uppercase;
+  letter-spacing: .4em;
+}
+
+/* line 42, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_followers.scss */
+.Followers__today {
+  font-weight: 700;
+}
+
+/* line 57, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_followers.scss */
+.item--facebook {
+  border-top: 4px solid deepskyblue;
+}
+
+/* line 61, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_followers.scss */
+.item--twitter {
+  border-top: 4px solid #1ca0f2;
+}
+
+/* line 65, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_followers.scss */
+.item--instagram {
+  border-top: 4px solid;
+  border-image: linear-gradient(45deg, #fdc468, #df4996) 1;
+}
+
+/* line 71, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_followers.scss */
+.item--youtube {
+  border-top: 4px solid #c4032a;
+}
+
+/* line 75, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_followers.scss */
+.Today--up {
+  color: #1db489;
+}
+
+/* line 79, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_followers.scss */
+.Today--down {
+  color: #dc414c;
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 3, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_overview.scss */
+  .Overview__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1em;
+  }
+}
+
+/* line 14, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_overview.scss */
+.Overview__card--item {
+  background-color: #f0f2fa;
+  border-radius: 0.25em;
+  padding: 2em;
+  margin-bottom: 1.5em;
+}
+
+/* line 21, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_overview.scss */
+.Overview__card--copy, .Overview__card--description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  border-radius: 1px solid red;
+}
+
+/* line 31, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_overview.scss */
+.Overview__card--title {
+  font-size: 21px;
+}
+
+/* line 35, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_overview.scss */
+.Overview__card--icon {
+  width: 25px;
+  height: 25px;
+}
+
+/* line 40, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_overview.scss */
+.Overview__card--number, .Overview__card--percentNumber {
+  margin: 0;
+  font-weight: 700;
+}
+
+/* line 46, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_overview.scss */
+.Overview__card--number {
+  font-size: 42px;
+  color: #1e202a;
+}
+
+/* line 51, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_overview.scss */
+.Overview__card--percentNumber {
+  font-size: 16.8px;
+  position: relative;
+}
+
+/* line 55, ../../../projects/git/github/frontend-mentor/social-media-dashboard/public/styles/components/_overview.scss */
+.Overview__card--percentNumber::after {
+  content: "%";
+}
+
+/*# sourceMappingURL=styles.css.map */

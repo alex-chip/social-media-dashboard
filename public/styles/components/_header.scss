@@ -1,0 +1,19 @@
+.Header {
+  border-bottom: 1px solid $light-color-text-grayish-blue;
+  padding-bottom: $gutter * 2;
+  margin-bottom: $gutter * 2;
+
+  @media screen and(min-width: $l) {
+    border-bottom: none;
+  }
+
+  &__title{
+    color: $light-color-text-dark-blue;
+    margin: 0 0 .3em 0;
+  }
+
+  &__description {
+    margin: 0;
+    font-weight: $font-weight-bold;
+  }
+}

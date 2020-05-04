@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $light-background-white;
+  font-size: $font-size;
+  font-family: $font-family;
+  color: $light-color-text-grayish-blue;
+  font-weight: $font-weight-normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  padding: $gutter;
+  max-width: $l;
+  margin: 0 auto;
+}
