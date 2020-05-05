@@ -1,0 +1,18 @@
+.Grid--container {
+  @media screen and(min-width: $m) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: $gutter * 1.5;
+  }
+  @media screen and(min-width: $l) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.Today--up {
+  color: var(--primary-color);
+}
+
+.Today--down {
+  color: var(--secondary-color);
+}

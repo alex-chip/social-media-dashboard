@@ -1,5 +1,5 @@
 .Header {
-  border-bottom: 1px solid $light-color-text-grayish-blue;
+  border-bottom: 1px solid var(--light-color-text-grayish-blue);
   padding-bottom: $gutter * 2;
   margin-bottom: $gutter * 2;
 
@@ -7,8 +7,8 @@
     border-bottom: none;
   }
 
-  &__title{
-    color: $light-color-text-dark-blue;
+  &__title {
+    color: var(--light-color-text-dark-blue);
     margin: 0 0 .3em 0;
   }
 

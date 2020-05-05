@@ -1,14 +1,8 @@
 .Followers {
   margin-bottom: $gutter * 4;
-
-  @media screen and(min-width: $l) {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: $gutter;
-  }
   
   &__card--item {
-    background-color: $light-background-card;
+    background-color: var(--light-background-card);
     text-align: center;
     padding: $gutter;
     border-radius: $border-radius;
@@ -29,8 +23,8 @@
     &--number {
       display: block;
       font-weight: $font-weight-bold;
-      font-size: 60px;
-      color: $light-color-text-dark-blue;
+      font-size: 50px;
+      color: var(--light-color-text-dark-blue);
     }
 
     &--description {
@@ -40,42 +34,38 @@
   }
 
   &__today {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     font-weight: $font-weight-bold;
-    // height: 20px;
-    // position: relative;
 
-    & span img {
-      // position: absolute;
-      // line-height: 10px;
-      // height: 30%;
-      // top: 30%;
-      // left: 35%;
+    &--img {
+      margin-right: .4em;
     }
   }
 }
 
+.item--facebook,
+.item--twitter,
+.item--instagram,
+.item--youtube {
+  border-top: 4px solid;
+}
+
 .item--facebook {
-  border-top: 4px solid $facebook-color;
+  border-color: var(--facebook-color);
 }
 
 .item--twitter {
-  border-top: 4px solid $twitter-color;
+  border-color: var(--twitter-color);
 }
 
 .item--instagram {
-  border-top: 4px solid;
-  border-image: $instagram-color 1;
+  border-image: var(--instagram-color) 1;
   // border-image-slice: 1;
 }
 
 .item--youtube {
-  border-top: 4px solid $youtube-color;
-}
-
-.Today--up {
-  color: $primary-color;
-}
-
-.Today--down {
-  color: $secondary-color;
+  border-top: 4px solid var(--youtube-color);
 }
